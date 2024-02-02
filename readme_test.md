@@ -34,9 +34,7 @@ https://www.kaggle.com/datasets/vrindakallu/new-york-dataset/data
 
 PROCESS
 ---
-----
------
---------
+
 
 
 
@@ -52,9 +50,9 @@ Thankfully, the null values were removed , but I still have to continue cleaning
 + remove extraneous text in the 'name' column so it's more readable at a glance.
 	-removed redundant property type from the 'name'column and kept what 
 	type of property it is. This new column is named 'property_type'.
-
+````
 	FORMULA: =LEFT(B2,FIND("in",B2)-1)
-	
+````
  
 + change 'last_review'format to make it a compatible date for SQL
 	- The format went from mm/dd/yyyy to yyyy-mm-dd
@@ -74,7 +72,7 @@ SQL Server import CSV using 'Flat File' due to the immense size of the table. Fo
 
 
 Datatypes for each column:
-
+````
 id INT
 name VARCHAR(255)
 property_type VARCHAR(255)
@@ -101,7 +99,7 @@ bedrooms VARCHAR(255)
 beds INT
 baths VARCHAR(255)
 baths_sql FLOAT (with NULL)
-
+````
 
 
 QUERIES TO ANSWER QUESTIONS
@@ -110,7 +108,7 @@ These queries are SQL Server syntax:
 
 
 > Highest prices of rental?
-
+````
 select top 10
 id, 
 property_type,
@@ -136,13 +134,11 @@ neighbourhood
 
 order by price desc
 ;
-
+````
 
 > Lowest prices of rental?
 
-*change the ORDER BY to 'asc'
-
-
+````
 select top 10
 id, 
 property_type,
@@ -168,13 +164,14 @@ neighbourhood
 
 order by price asc
 ;
-
+````
 
 
 > Most popular room type?
 
-*In this case, I chose rooms with the highest ratings, but it still weilded over 2000 results:
+In this case, I chose rooms with the highest ratings, but it still weilded over 2000 results:
 
+````
 select 
 id, 
 room_type
@@ -192,12 +189,11 @@ airbnb.dbo.airbnb
 where rating_sql >= 5
 order by room_type
 ;
+````
 
-* This gave me a bit of further insight that
-Entire home/apt
-Private room
-Shared room
-are the highest rated types of rooms.
+This gave me a bit of further insight that:
+
+Entire home/apt, Private room, and Shared room ****are the highest rated types of rooms.
 
 Out of the ENTIRE dataset though, the queries would look like this:
 
@@ -218,7 +214,6 @@ where room_type = 'Private room'
 --private room 8804
 
 The most popular room type regardless of rating was 'entire home/apt'.
-
 
 
 > Most and least popular Neighbourhood Group?
