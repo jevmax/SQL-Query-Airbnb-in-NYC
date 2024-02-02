@@ -229,7 +229,7 @@ airbnb.dbo.airbnb
 
 
 Then I collect how many properties categorized in each neighborhood group:
-
+````
 select
 count (neighbourhood_group)
 from 
@@ -237,6 +237,7 @@ airbnb.dbo.airbnb
 
 where neighbourhood_group = ' '
 ;
+````
 
 -- Manhattan: 8038
 -- Brooklyn: 7719
