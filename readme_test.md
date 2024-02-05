@@ -21,8 +21,7 @@ Questions to Answer:
 > Most common Host (and how many distinct [non duplicate] properties they have)
 
 
-> Total price (SUM?) based on each Neighborhood Group so I can compare and contrast which neighborhood groups (and the neighborhoods in each group) are more lucrative
-	NOTE: Jev, this means that you'll have to query for the neighborhood 	group first, then get a sum of all the property price and show 	answer in a new column AS 'answer' column. Pick apart if it doesn't 	work.
+> Total price (SUM?) based on each Neighborhood Group so I can compare and contrast which neighborhood groups (and the neighborhoods in each group) are more lucrative.
 
 > What properties are licensed?
 > How many properties have reviews BUT no ratings? (That's odd)
@@ -34,9 +33,6 @@ https://www.kaggle.com/datasets/vrindakallu/new-york-dataset/data
 
 PROCESS
 ---
-
-
-
 
 
 1. Organization
@@ -68,8 +64,6 @@ Thankfully, the null values were removed , but I still have to continue cleaning
 
 
 SQL Server import CSV using 'Flat File' due to the immense size of the table. For Beekeeper Community,I would need an external tool to convert the table's data into an 'INSERT INTO'.
-
-
 
 Datatypes for each column:
 ````
