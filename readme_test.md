@@ -12,19 +12,19 @@ For this project I used a dataset from Kaggle that collected AirBnB listings in 
 
 Questions to Answer:
 
-> Highest price of rental?
-> Lowest price of rental?
-> Most popular room type? 
-> Least popular room type?
-> Most popular Neighborhood Group?
-> Least popular Neighborhood Group?
-> Most common Host (and how many distinct [non duplicate] properties they have)
+> Highest price of rental?</br>
+> Lowest price of rental?</br>
+> Most popular room type?</br>
+> Least popular room type?</br>
+> Most popular Neighborhood Group?</br>
+> Least popular Neighborhood Group?</br>
+> Most common Host (and how many distinct [non duplicate] properties they have)</br>
 
 
-> Total price (SUM?) based on each Neighborhood Group so I can compare and contrast which neighborhood groups (and the neighborhoods in each group) are more lucrative.
+> Total price (SUM?) based on each Neighborhood Group so I can compare and contrast which neighborhood groups (and the neighborhoods in each group) are more lucrative.</br>
 
-> What properties are licensed?
-> How many properties have reviews BUT no ratings? (That's odd)
+> What properties are licensed?</br>
+> How many properties have reviews BUT no ratings?</br>
 
 
 Source: 
@@ -36,7 +36,7 @@ PROCESS
 
 
 1. Organization
-----
+-
 Thankfully, the null values were removed , but I still have to continue cleaning and modifying this data to make sure that it's more accessible and readible when querying.
 
 
@@ -46,8 +46,10 @@ Thankfully, the null values were removed , but I still have to continue cleaning
 + remove extraneous text in the 'name' column so it's more readable at a glance.
 	-removed redundant property type from the 'name'column and kept what 
 	type of property it is. This new column is named 'property_type'.
+
 ````
-	FORMULA: =LEFT(B2,FIND("in",B2)-1)
+FORMULA:
+ =LEFT(B2,FIND("in",B2)-1)
 ````
  
 + change 'last_review'format to make it a compatible date for SQL
