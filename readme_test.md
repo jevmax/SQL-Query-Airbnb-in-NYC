@@ -1,6 +1,6 @@
 --Dataset: Airbnb data</br>
---Source: Kaggle</b>
---Queried using: Microsoft SQL Server Management Studio</b>
+--Source: Kaggle</br>
+--Queried using: Microsoft SQL Server Management Studio</br>
 
 This project's objective was to answer some questions through MYSQL queries using a dataset involving real estate.
 
