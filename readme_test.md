@@ -12,20 +12,19 @@ For this project I used a dataset from Kaggle that collected AirBnB listings in 
 
 Questions to Answer:
 
-> Highest price of rental?</br>
-> Lowest price of rental?</br>
-> Most popular room type?</br>
-> Least popular room type?</br>
-> Most popular Neighborhood Group?</br>
-> Least popular Neighborhood Group?</br>
-> Most common Host (and how many distinct [non duplicate] properties they have)</br>
+Highest price of rental?</br>
+Lowest price of rental?</br>
+Most popular room type?</br>
+Least popular room type?</br>
+Most popular Neighborhood Group?</br>
+Least popular Neighborhood Group?</br>
+Most common Host (and how many distinct [non duplicate] properties they have)</br>
 
 
-> Total price (SUM?) based on each Neighborhood Group so I can compare and contrast which neighborhood groups (and the neighborhoods in each group) are more lucrative.</br>
+Total price based on each Neighborhood Group so I can compare and contrast which neighborhood groups (and the neighborhoods in each group) are more lucrative.</br>
 
-> What properties are licensed?</br>
-> How many properties have reviews BUT no ratings?</br>
-
+What properties are licensed?</br>
+How many properties have reviews BUT no ratings?</br>
 
 Source: 
 https://www.kaggle.com/datasets/vrindakallu/new-york-dataset/data
