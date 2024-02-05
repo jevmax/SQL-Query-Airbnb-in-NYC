@@ -34,34 +34,30 @@ PROCESS
 
 
 1. Organization
--
+
 Thankfully, the null values were removed , but I still have to continue cleaning and modifying this data to make sure that it's more accessible and readible when querying.
 
 
-+ add an ID type column specific for SQL while keeping the Airbnb id column.
+•Added an ID type column specific for SQL while keeping the Airbnb id column.
 
 
-+ remove extraneous text in the 'name' column so it's more readable at a glance.
-	-removed redundant property type from the 'name'column and kept what 
-	type of property it is. This new column is named 'property_type'.
+•Removed extraneous text in the 'name' column so it's more readable at a glance.
+
+•Removed redundant property type from the 'name'column and kept what type of property it is. This new column is named 'property_type'.
 
 ````
 FORMULA:
  =LEFT(B2,FIND("in",B2)-1)
 ````
  
-+ change 'last_review'format to make it a compatible date for SQL
-	- The format went from mm/dd/yyyy to yyyy-mm-dd
+•Changed 'last_review'format to make it a compatible date for SQL. The date format went from mm/dd/yyyy to yyyy-mm-dd
 
 
-+ added a SQL-friendly duplicate column to the 'rating' column called 'rating_sql'. 'rating' can stay as source data, but for 'rating_sql' I simply made "No Rating" a 0. When calculating, I can use 'rating_sql'for numeric values.
+•Added a SQL-friendly duplicate column to the 'rating' column called 'rating_sql'. 'rating' can stay as source data, but for 'rating_sql' I simply made "No Rating" a 0. When calculating, I can use 'rating_sql'for numeric values.
 
-+ I have to do the same for the 'baths' column since one row had text not specifying how many bathrooms available on the property. 'baths' being the source column, but 'baths_sql' as a FLOAT datatype with a 'NULL' value on the non-specified bathroom.
+•I had to do the same for the 'baths' column since one row had text not specifying how many bathrooms available on the property. 'baths' being the source column, but 'baths_sql' as a FLOAT datatype with a 'NULL' value on the non-specified bathroom.
 
 2. Import
-----
-
-
 
 SQL Server import CSV using 'Flat File' due to the immense size of the table. For Beekeeper Community,I would need an external tool to convert the table's data into an 'INSERT INTO'.
 
