@@ -1,4 +1,4 @@
---Dataset: Airbnb data</b>
+--Dataset: Airbnb data</br>
 --Source: Kaggle</b>
 --Queried using: Microsoft SQL Server Management Studio</b>
 
@@ -384,11 +384,6 @@ Meanwhile I can just take the 'NOT' out of my WHERE clause to show how many prop
 Licensed: 1054
 Exempt: 2135
 No License: 17569
-
-****	      ******
-**** Bookmark ******
-********************
-********************
 
 > How many properties have reviews but NO RATINGS?
 (I found it odd)
