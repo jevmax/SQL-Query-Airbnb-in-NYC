@@ -180,9 +180,7 @@ order by room_type
 ;
 ````
 
-This gave me a bit of further insight that:
-
-Entire home/apt, Private room, and Shared room are the highest rated types of rooms.
+This shows me that Entire home/apt, Private room, and Shared room are the highest rated types of rooms.
 
 Out of the entire dataset though, the queries would look like this:
 ```
@@ -205,7 +203,6 @@ where room_type = 'Private room'
 ```
 
 The most popular room type regardless of rating was 'entire home/apt'.
-
 
 
 > Most and least popular Neighbourhood Group?
