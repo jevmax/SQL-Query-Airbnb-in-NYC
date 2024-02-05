@@ -10,21 +10,20 @@ Data Used
 For this project I used a dataset from Kaggle that collected AirBnB listings in New York City up to early January, 2024.
 
 
-Questions to Answer:
+Questions to Answer when looking through this dataset:
 
-Highest price of rental?</br>
-Lowest price of rental?</br>
-Most popular room type?</br>
-Least popular room type?</br>
-Most popular Neighborhood Group?</br>
-Least popular Neighborhood Group?</br>
-Most common Host (and how many distinct [non duplicate] properties they have)</br>
+•Highest price of rental?</br>
+•Lowest price of rental?</br>
+•Most popular room type?</br>
+•Least popular room type?</br>
+•Most popular Neighborhood Group?</br>
+•Least popular Neighborhood Group?</br>
+•Most common host (and how many non-duplicate properties they have)</br>
 
+•Prices based by neighborhood groups to compare against each other.
 
-Total price based on each Neighborhood Group so I can compare and contrast which neighborhood groups (and the neighborhoods in each group) are more lucrative.</br>
-
-What properties are licensed?</br>
-How many properties have reviews BUT no ratings?</br>
+•What properties are licensed?</br>
+•How many properties have reviews BUT no ratings?</br>
 
 Source: 
 https://www.kaggle.com/datasets/vrindakallu/new-york-dataset/data
