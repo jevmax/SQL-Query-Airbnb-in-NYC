@@ -200,7 +200,7 @@ where room_type = 'Private room'
 --private room 8804
 ```
 
-The most popular room type regardless of rating was 'entire home/apt'.
+The most popular room type regardless of rating was 'Entire home/apt'.
 
 
 > Most and least popular Neighbourhood Group?
@@ -412,7 +412,6 @@ WHERE rating_sql < 1 AND number_of_reviews > 0
 ORDER BY rating_sql ASC
 ;
 ```
-
 I found 3593 properties that have reviews but no ratings, (not counting null values)
 
 Query for null values:
