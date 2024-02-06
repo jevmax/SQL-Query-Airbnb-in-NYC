@@ -5,7 +5,7 @@
 This project's objective was to answer some questions through MYSQL queries using a dataset involving real estate.
 
 
-Data Used
+Objectives
 ---
 For this project I used a dataset from Kaggle that collected AirBnB listings in New York City up to early January, 2024.
 
@@ -29,11 +29,8 @@ Source:
 https://www.kaggle.com/datasets/vrindakallu/new-york-dataset/data
 
 
-PROCESS
+Process
 ---
-
-
-1. Organization
 
 Thankfully, the null values were removed , but I still have to continue cleaning and modifying this data to make sure that it's more accessible and readible when querying.
 
@@ -56,7 +53,8 @@ FORMULA:
 
 •I had to do the same for the 'baths' column since one row had text not specifying how many bathrooms available on the property. 'baths' being the source column, but 'baths_sql' as a FLOAT datatype with a 'NULL' value on the non-specified bathroom.
 
-2. Import
+Import
+---
 
 SQL Server import CSV using 'Flat File' due to the immense size of the table. For Beekeeper Community,I would need an external tool to convert the table's data into an 'INSERT INTO'.
 
@@ -158,7 +156,7 @@ order by price asc
 
 > Most popular room type?
 
-In this case, I chose rooms with the highest ratings, but it still weilded over 2000 results:
+In this case, I chose rooms with the highest ratings, but it still presents over 2000 results:
 
 ````
 select 
