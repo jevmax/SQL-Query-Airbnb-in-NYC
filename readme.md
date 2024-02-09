@@ -1,9 +1,8 @@
---Dataset: Airbnb data</br>
---Source: Kaggle</br>
---Queried using: Microsoft SQL Server Management Studio</br>
-
 This project's objective was to answer some questions through MYSQL queries using a dataset involving real estate.
 
+<b>Dataset:</b> Airbnb data</br>
+<b>Source:</b> Kaggle </br>
+<b>Queried using:</b> Microsoft SQL Server Management Studio 19 </br>
 
 Objectives
 ---
@@ -89,7 +88,7 @@ baths_sql FLOAT (with NULL)
 ````
 
 
-QUERIES TO ANSWER QUESTIONS
+Queries for the questions
 ---
 These queries are SQL Server syntax:
 
