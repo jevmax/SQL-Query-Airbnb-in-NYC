@@ -6,8 +6,9 @@ This project's objective was to answer some questions through MYSQL queries usin
 
 Objectives
 ---
-For this project I used a dataset from Kaggle that collected AirBnB listings in New York City up to early January, 2024.
-
+For this project I used a dataset from Kaggle that collected AirBnB listings in New York City up to early January, 2024.</br>
+Source: 
+https://www.kaggle.com/datasets/vrindakallu/new-york-dataset/data
 
 Questions to Answer when looking through this dataset:
 
@@ -17,15 +18,12 @@ Questions to Answer when looking through this dataset:
 •Least popular room type?</br>
 •Most popular Neighborhood Group?</br>
 •Least popular Neighborhood Group?</br>
-•Most common host (and how many non-duplicate properties they have)</br>
-
-•Prices based by neighborhood groups to compare against each other.
-
+•Most common host (and how many non-duplicate properties do they have)?</br>
+•Prices based by neighborhood groups to compare against each other.</br>
 •What properties are licensed?</br>
 •How many properties have reviews BUT no ratings?</br>
 
-Source: 
-https://www.kaggle.com/datasets/vrindakallu/new-york-dataset/data
+
 
 
 Process
